@@ -23,8 +23,7 @@
             android:fontFamily="Roboto"
             android:gravity="center"
             android:textStyle="bold"
-            android:textAlignment="textStart"
-            android:text="Syarat & Ketentuan"
+            android:text="Syarat dan Ketentuan"
             android:textColor="#ffffff"
             android:textSize="18sp" />
     </LinearLayout>
