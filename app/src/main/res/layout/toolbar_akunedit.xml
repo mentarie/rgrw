@@ -33,8 +33,9 @@
             android:fontFamily="Roboto"
             android:gravity="center"
             android:textStyle="bold"
+
             android:layout_marginLeft="200dp"
-            android:text="UBAH"
+            android:text="Ubah"
             android:textColor="#639D4C"
             android:textSize="18sp" />
     </LinearLayout>
