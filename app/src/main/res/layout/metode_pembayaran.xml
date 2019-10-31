@@ -33,13 +33,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="65dp"
-            android:layout_height="21dp"
-            android:layout_marginTop="13dp"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10sp"
             android:gravity="left"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:textSize="13sp"
             android:layout_marginTop="13dp"
-            android:layout_marginLeft="29dp"
+            android:layout_marginLeft="25dp"
             android:fontFamily="Roboto"
             android:text="BCA Virtual Account"
             android:textColor="#555555"
@@ -80,4 +80,175 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bca"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="Roboto"
+            android:text="Transfer BCA"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c4c4c4"
+        android:layout_marginLeft="11dp"
+        >
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/mandiri"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="Roboto"
+            android:text="Transfer Mandiri"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c4c4c4"
+        android:layout_marginLeft="11dp"
+        >
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bni"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="Roboto"
+            android:text="Transfer BNI"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c4c4c4"
+        android:layout_marginLeft="11dp"
+        >
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bnis"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="Roboto"
+            android:text="Transfer BNI Syariah"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c4c4c4"
+        android:layout_marginLeft="11dp"
+        >
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bri"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="Roboto"
+            android:text="Transfer BRI"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c4c4c4"
+        android:layout_marginLeft="11dp"
+        >
+    </View>
+</LinearLayout>
+</LinearLayout>
 </LinearLayout>
