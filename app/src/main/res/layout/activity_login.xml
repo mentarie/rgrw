@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Login">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
@@ -93,25 +95,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="30dp">
+
         <View
             android:layout_width="180dp"
             android:layout_height="2dp"
             android:background="#BCBEC0"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"
-            ></View>
+            android:layout_marginRight="10dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ATAU"
-            android:textSize="15sp"></TextView>
+            android:textSize="15sp" />
+
         <View
             android:layout_width="180dp"
             android:layout_height="2dp"
             android:background="#BCBEC0"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            ></View>
+            android:layout_marginLeft="10dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -120,13 +123,14 @@
         <include
             layout="@layout/button_putih">
         </include>
-    ></LinearLayout>
+        ></LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:weightSum="2"
         android:background="#639D4C">
+
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
@@ -134,12 +138,13 @@
             android:textSize="15sp"
             android:gravity="center"
             android:textAlignment="center"
-            android:text="Lupa Detail?"></TextView>
+            android:text="Lupa Detail?" />
+
         <View
             android:layout_width="2dp"
             android:layout_height="wrap_content"
-            android:background="#BCBEC0"
-            ></View>
+            android:background="#BCBEC0" />
+
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
@@ -147,7 +152,7 @@
             android:textSize="15sp"
             android:gravity="center"
             android:textAlignment="center"
-            android:text="Buat Akun?"></TextView>
+            android:text="Buat Akun?" />
     </LinearLayout>
 
 </LinearLayout>
