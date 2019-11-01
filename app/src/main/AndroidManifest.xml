@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login"></activity>
-        <activity android:name=".Activity_komunitas" > <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Model.Activity_donasisaya_donasi"></activity>
+        <activity android:name=".Activity_donasisaya"></activity>
+        <activity android:name=".Activity_kodekonfirmasi"></activity>
+        <activity android:name=".Activity_daftar" />
+        <activity android:name=".Login" />
+        <activity android:name=".Activity_komunitas">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
-        <activity android:name=".MainActivity">
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
