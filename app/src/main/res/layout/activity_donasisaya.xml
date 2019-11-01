@@ -283,7 +283,6 @@
                     android:fontFamily="Roboto"
                     android:text="#KebakaranHutan - ReGrow Hutan Kalimantan Timur"
                     android:textColor="#555555"
-                    android:gravity="center"
                     android:textAlignment="textStart"
                     android:textStyle="bold"
                     android:layout_marginLeft="100dp">
@@ -408,8 +407,6 @@
                     android:fontFamily="Roboto"
                     android:text="#PenebanganLiar - ReGrow Hutan Sumatera Utara"
                     android:textColor="#555555"
-                    android:gravity="center"
-                    android:textAlignment="textStart"
                     android:textStyle="bold"
                     android:layout_marginLeft="100dp">
 
