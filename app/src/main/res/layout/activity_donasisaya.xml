@@ -13,17 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="Roboto"
-        android:text="Donasi Saya Akhir-Akhir Ini"
-        android:textColor="#555555"
-        android:textStyle="bold"
-        android:gravity="left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="Roboto"
+            android:gravity="left"
+            android:text="Donasi Saya Akhir-Akhir Ini"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -45,164 +45,164 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="SEN"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal"
                     android:layout_marginLeft="25dp"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp">
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="SEL"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp">
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="RAB"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp">
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="KAM"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal_putih"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal_putih" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp">
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="JUM"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal_putih"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal_putih" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp">
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="SAB"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal_putih"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal_putih" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="25dp">
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="Roboto"
+                    android:gravity="center"
                     android:text="MIN"
                     android:textColor="#737373"
-                    android:gravity="center"/>
+                    android:textSize="10sp" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="33dp"
-                    android:src="@drawable/pohon_tanggal_putih"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:src="@drawable/pohon_tanggal_putih" />
 
             </LinearLayout>
 
@@ -214,14 +214,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="19dp">
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="9dp"
-            android:background="#0F000000"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="#0F000000" />
 
     </LinearLayout>
 
@@ -233,21 +233,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
             android:layout_marginLeft="20dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="Catatan Kebaikan"
             android:textColor="#555555"
-            android:textStyle="bold"
-            android:gravity="left"/>
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -257,14 +257,14 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:cardCornerRadius="18dp"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="18dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/selamatkan"
-                    android:background="@drawable/bg_whitebutton">
+                    android:background="@drawable/bg_whitebutton"
+                    android:src="@drawable/selamatkan">
 
                 </ImageView>
 
@@ -273,21 +273,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginRight="20dp">
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:textSize="12sp"
+                    android:layout_marginLeft="100dp"
                     android:fontFamily="Roboto"
+
                     android:text="#KebakaranHutan - ReGrow Hutan Kalimantan Timur"
                     android:textColor="#555555"
                     android:textAlignment="textStart"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="100dp">
+                    android:textColor="#555555"
+                    android:textSize="12sp"
+                    android:textStyle="bold">
 
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -297,11 +301,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="10sp"
-                        android:fontFamily="Roboto"
                         android:layout_marginLeft="20dp"
+                        android:fontFamily="Roboto"
                         android:text="19 September 2019"
-                        android:textColor="#979797">
+                        android:textColor="#979797"
+                        android:textSize="10sp">
 
                     </TextView>
 
@@ -309,21 +313,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:textSize="10sp"
                         android:fontFamily="Roboto"
-                        android:text="•   Rp 10.000 "
-                        android:textColor="#555555"
                         android:gravity="left"
-                        android:textAlignment="textStart">
+                        android:text="•   Rp 10.000 "
+                        android:textAlignment="textStart"
+                        android:textColor="#555555"
+                        android:textSize="10sp">
 
                     </TextView>
 
                 </LinearLayout>
 
             </LinearLayout>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 app:cardCornerRadius="5dp"
                 app:cardBackgroundColor="#fffffff"
                 android:outlineAmbientShadowColor="#639D4C"
@@ -344,6 +350,7 @@
                         android:textAlignment="center">
 
                     </TextView>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -355,21 +362,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#0F000000"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:background="#0F000000" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal"
         android:layout_marginTop="16dp">
 
@@ -381,14 +389,14 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:cardCornerRadius="18dp"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="18dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/selamatkan2"
-                    android:background="@drawable/bg_whitebutton">
+                    android:background="@drawable/bg_whitebutton"
+                    android:src="@drawable/selamatkan2">
 
                 </ImageView>
 
@@ -397,12 +405,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:orientation="vertical"
                 android:layout_marginRight="20dp">
+
                 <TextView
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
+
                     android:textSize="12sp"
                     android:fontFamily="Roboto"
                     android:text="#PenebanganLiar - ReGrow Hutan Sumatera Utara"
@@ -410,7 +421,9 @@
                     android:textStyle="bold"
                     android:layout_marginLeft="100dp">
 
+
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -420,11 +433,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="10sp"
-                        android:fontFamily="Roboto"
                         android:layout_marginLeft="20dp"
+                        android:fontFamily="Roboto"
                         android:text="16 September 2019"
-                        android:textColor="#979797">
+                        android:textColor="#979797"
+                        android:textSize="10sp">
 
                     </TextView>
 
@@ -432,21 +445,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+
                         android:textSize="10sp"
+
                         android:fontFamily="Roboto"
-                        android:text="•   Rp 10.000 "
-                        android:textColor="#555555"
                         android:gravity="left"
-                        android:textAlignment="textStart">
+                        android:text="•   Rp 10.000 "
+                        android:textAlignment="textStart"
+                        android:textColor="#555555"
+                        android:textSize="10sp">
 
                     </TextView>
 
                 </LinearLayout>
 
             </LinearLayout>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 app:cardCornerRadius="5dp"
                 app:cardBackgroundColor="#fffffff"
                 android:outlineAmbientShadowColor="#639D4C"
@@ -478,20 +496,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#0F000000"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:background="#0F000000" />
 
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>
