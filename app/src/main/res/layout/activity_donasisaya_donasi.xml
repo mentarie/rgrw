@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Model.Activity_donasisaya_donasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="Roboto"
+            android:text="Terima Kasih!"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="Roboto"
+            android:text="Donasimu telah kami terima dan akan kami salurkan"
+            android:textColor="#555555"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="Roboto"
+                android:text="Tanggal"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="Roboto"
+                android:text="Metode Pembayaran"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="Roboto"
+                android:text="ID Donasi"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="Roboto"
+                android:text="Status"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="Roboto"
+                android:text="Riwayat Pendonasian :"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="65dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="Roboto"
+                android:text="19 Sep 2019-15:01"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="Roboto"
+                android:text="Transfer Mandiri"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="Roboto"
+                android:text="#4444888"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#fffffff"
+                android:outlineAmbientShadowColor="#639D4C"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="left">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Berhasil"
+                        android:textColor="#639D4C"
+                        android:textSize="10dp"
+                        android:textAlignment="center">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="50dp"
+                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center"
+                android:layout_marginLeft="90dp">
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#CC94D082"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="50dp"
+                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center">
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#CC94D082"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="50dp"
+                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center">
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#CC94D082"
+                android:layout_gravity="center" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="50dp"
+                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center">
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="Roboto"
+                    android:text="Transfer"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="Roboto"
+                    android:text="Donasi"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="33dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="Roboto"
+                    android:text="Donasi"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="Roboto"
+                    android:text="Diterima"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="Roboto"
+                    android:text="Penggunaan"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="Roboto"
+                    android:text="Dana"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="21dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="Roboto"
+                    android:text="Hari H"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="Roboto"
+                    android:text="Reboisasi"
+                    android:textColor="#639D4C"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="18dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selamatkan3"
+                    android:background="@drawable/bg_whitebutton">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textSize="12sp"
+                    android:fontFamily="Roboto"
+                    android:text="#KebakaranHutan - ReGrow Hutan Kalimantan Timur"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="100dp">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:fontFamily="Roboto"
+                        android:layout_marginLeft="20dp"
+                        android:text="Pecinta Alam Kaltim"
+                        android:textColor="#555555">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="93dp"
+                    android:layout_height="17dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#EA4D43"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="left">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Donasi Lagi"
+                            android:textColor="#ffffff"
+                            android:textSize="9dp"
+                            android:textAlignment="center">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#fffffff"
+                android:outlineAmbientShadowColor="#639D4C"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:text="Berhasil"
+                        android:textColor="#639D4C"
+                        android:textSize="10dp"
+                        android:textAlignment="center">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#F4F4F4"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="Roboto"
+                android:text="Detail Donasi"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="Roboto"
+                android:text="Rp 50.000"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:gravity="left"
+                android:layout_marginLeft="234dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#F4F4F4"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/informasi"
+                android:background="@drawable/bg_whitebutton"
+                android:layout_gravity="center">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12.5sp"
+            android:fontFamily="Roboto"
+            android:text="Bantuan"
+            android:textColor="#555555"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_navigate_next_black_24dp"
+            android:layout_marginLeft="274dp"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F4F4"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
