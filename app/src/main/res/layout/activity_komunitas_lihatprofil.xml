@@ -4,91 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_komunitas_lihatprofil"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Activity_komunitas_lihatprofil">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp">
-    </LinearLayout>
+        android:layout_height="40dp"></LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="100dp"
             android:layout_height="130dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/mm">
-        </de.hdodenhof.circleimageview.CircleImageView>
+            android:src="@drawable/mm" />
+
         <LinearLayout
-            android:background=""
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Muda Menginspirasi"
-                android:textStyle="bold"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="5dp"
-                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center_vertical"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center_vertical">
+                app:cardBackgroundColor="#639D4C"
+                app:cardCornerRadius="5dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_group_white_24dp"
                         android:layout_marginLeft="10dp"
-                        ></ImageView>
+                        android:src="@drawable/ic_group_white_24dp"></ImageView>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="800"
-                        android:gravity="center"
-                        android:textColor="#ffffff"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        ></TextView>
+                        android:gravity="center"
+                        android:text="800"
+                        android:textColor="#ffffff"></TextView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bergabung"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:text="Bergabung" />
         </LinearLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_favorite_pink_24dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="24dp"
-            android:layout_marginLeft="20dp"/>
+            android:src="@drawable/ic_favorite_pink_24dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Deskripsi"></TextView>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#BCBEC0"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:background="#BCBEC0" />
     </LinearLayout>
 </LinearLayout>

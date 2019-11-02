@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
-        <include layout="@layout/toolbar_daftar"
-    </LinearLayout>
+    <include layout="@layout/toolbar_daftar" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,26 +15,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="Masukkan kode Konfirmasi"
             android:textColor="#555555"
-            android:textStyle="bold"
-            android:gravity="left" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="*"
             android:textColor="#F44336"
-            android:textStyle="bold"
-            android:gravity="left" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -50,25 +47,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="Kode kami kirimkan ke nomor"
             android:textColor="#ADADAD"
-            android:gravity="left" />
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="+6281009900889"
             android:textColor="#8A8A8A"
-            android:textStyle="bold"
-            android:gravity="left" />
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -87,11 +84,10 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="5"
-                android:textSize="65dp"
-                android:textColor="#BF555555">
-            </EditText>
+                android:textAlignment="center"
+                android:textColor="#BF555555"
+                android:textSize="65dp"></EditText>
 
         </LinearLayout>
 
@@ -103,11 +99,10 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="5"
-                android:textSize="65dp"
-                android:textColor="#BF555555">
-            </EditText>
+                android:textAlignment="center"
+                android:textColor="#BF555555"
+                android:textSize="65dp"></EditText>
 
         </LinearLayout>
 
@@ -119,11 +114,10 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="5"
-                android:textSize="65dp"
-                android:textColor="#BF555555">
-            </EditText>
+                android:textAlignment="center"
+                android:textColor="#BF555555"
+                android:textSize="65dp"></EditText>
 
         </LinearLayout>
 
@@ -135,11 +129,10 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="5"
-                android:textSize="65dp"
-                android:textColor="#BF555555">
-            </EditText>
+                android:textAlignment="center"
+                android:textColor="#BF555555"
+                android:textSize="65dp"></EditText>
 
         </LinearLayout>
 
@@ -149,8 +142,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
-    </LinearLayout>
+        android:orientation="horizontal"></LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -159,25 +152,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="Kode tidak diterima?"
             android:textColor="#C2555555"
-            android:gravity="left" />
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="Roboto"
+            android:gravity="left"
             android:text="Kirim ulang kode"
             android:textColor="#639D4C"
-            android:textStyle="bold"
-            android:gravity="left" />
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
