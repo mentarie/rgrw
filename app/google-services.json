@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "309558503197",
+    "firebase_url": "https://regrow-f9fe7.firebaseio.com",
+    "project_id": "regrow-f9fe7",
+    "storage_bucket": "regrow-f9fe7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309558503197:android:3ffc34db80e9c48230a3f4",
+        "android_client_info": {
+          "package_name": "proyek.android.regrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309558503197-171hrgsilhe7437hj579qdh42el8pmoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNm5pLqQ1Yk7AFcQaqo2fCLbkPAx_XM88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309558503197-171hrgsilhe7437hj579qdh42el8pmoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

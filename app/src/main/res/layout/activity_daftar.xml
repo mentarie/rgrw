@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
+
         <include layout="@layout/toolbar_daftar" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,23 +20,23 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:layout_marginTop="15dp"
             android:fontFamily="Roboto"
+            android:gravity="center"
             android:text="Daftar akun baru dengan"
             android:textColor="#555555"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="77dp"
-        android:layout_marginTop="43dp"
-        >
+        android:layout_marginTop="43dp">
 
-        <include layout="@layout/button_putih"
+        <include
+            layout="@layout/button_putih"
             android:gravity="center">
 
         </include>
@@ -47,9 +50,9 @@
         <View
             android:layout_width="180dp"
             android:layout_height="2dp"
-            android:background="#BCBEC0"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:background="#BCBEC0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,35 +63,35 @@
         <View
             android:layout_width="180dp"
             android:layout_height="2dp"
-            android:background="#BCBEC0"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:background="#BCBEC0" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="28dp">
-    </LinearLayout>
+        android:layout_height="28dp"></LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="60dp"
-                android:textSize="15sp"
-                android:hint="Nomor Telepon" />
+                android:hint="Nomor Telepon"
+                android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -101,11 +104,11 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="60dp"
-            android:textSize="15sp"
-            android:hint="Nama Lengkap" />
+            android:hint="Nama Lengkap"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -126,23 +129,23 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="13sp"
             android:layout_marginTop="10dp"
             android:fontFamily="Roboto"
+            android:gravity="center"
             android:text="Dengan mendaftar, kamu setuju dengan"
             android:textColor="#555555"
-            android:gravity="center" />
+            android:textSize="13sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="13sp"
             android:layout_marginTop="8dp"
             android:fontFamily="Roboto"
+            android:gravity="center"
             android:text="Syarat dan Ketentuan ReGrow."
             android:textColor="#555555"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
