@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,16 +30,28 @@ public class Activity_kodekonfirmasi extends AppCompatActivity {
     private String no_hp;
     private OtpView otpView;
     private FirebaseAuth mAuth;
+    private TextView id_text_hp, id_btn_resend;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kodekonfirmasi);
 
         mAuth = FirebaseAuth.getInstance();
+        id_text_hp = findViewById(R.id.id_text_hp);
+        id_btn_resend = findViewById(R.id.id_btn_resend);
         otpView = findViewById(R.id.otp_view);
         Intent i = getIntent();
-        String nohp = i.getStringExtra("id_login_layout");
+        final String nohp = i.getStringExtra("id_login_layout");
+        id_text_hp.setText(nohp);
         sendVerificationCode(nohp);
+
+        id_btn_resend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendVerificationCode(nohp);
+            }
+        });
 
         otpView.setOtpCompletionListener(new OnOtpCompletionListener() {
             @Override public void onOtpCompleted(String otp) {
@@ -119,14 +132,7 @@ public class Activity_kodekonfirmasi extends AppCompatActivity {
                                 message = "Invalid code entered...";
                             }
 
-                            Snackbar snackbar = Snackbar.make(findViewById(R.id.parent), message, Snackbar.LENGTH_LONG);
-                            snackbar.setAction("Dismiss", new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-
-                                }
-                            });
-                            snackbar.show();
+                            Toast.makeText(Activity_kodekonfirmasi.this, message, Toast.LENGTH_LONG).show();
                         }
                     }
                 });
