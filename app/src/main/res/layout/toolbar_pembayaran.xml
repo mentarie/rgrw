@@ -24,7 +24,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textAlignment="textStart"
-            android:text="Isi Saldo Dompet"
+            android:text="Pembayaran"
             android:textColor="#ffffff"
             android:textSize="18sp" />
     </LinearLayout>
