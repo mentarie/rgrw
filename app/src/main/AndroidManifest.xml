@@ -18,7 +18,6 @@
         <activity android:name=".Activity_donasisaya"></activity>
         <activity android:name=".Activity_kodekonfirmasi"></activity>
         <activity android:name=".Activity_daftar" />
-        <activity android:name=".Login" />
         <activity android:name=".Activity_komunitas">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
