@@ -1,6 +1,7 @@
 package proyek.android.regrow.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
+import proyek.android.regrow.R;
 
 import android.os.Bundle;
 

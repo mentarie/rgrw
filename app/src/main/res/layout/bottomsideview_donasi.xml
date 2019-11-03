@@ -63,12 +63,13 @@
                 android:text="Transfer Mandiri"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="PILIH"
                 android:layout_gravity="center"
-                android:textAlignment="viewEnd"></TextView>
+                android:textAlignment="viewEnd" />
 
         </LinearLayout>
         <View
