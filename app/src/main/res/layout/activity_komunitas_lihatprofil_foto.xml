@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_komunitas_lihatprofil_foto">
+
+    <include layout="@layout/toolbar_backsaja" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/full_photo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Proses pemilihan dan pembelian bibit pohon"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="Pembelian Bibit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pembelian Bibit pohon untuk reboisasi hutan
+Kalimantan. Bibit pohon dibeli dari toko Pertanian di kota Palang Karaya, tepatnya di toko pertanian Mentari. Pembelian sebanyak 5000 bibit pohon diharapkan dapat menyuburkan kembali hutan
+Kalimantan setelah terbakar.
+Pembelian Bibit pohon untuk reboisasi hutan
+Kalimantan. Bibit pohon dibeli dari toko pertanian di kota Palang Karaya, tepatnya di toko pertanian Mentari. Pembelian sebanyak 5000 bibit pohon diharapkan dapat menyuburkan kembali hutan kalimantan setelah terbakar.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="27 Juli 2019"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_komunitas_lihatprofil"></activity>
+        <activity android:name=".activity_komunitas_lihatprofil_foto"></activity>
+        <activity android:name=".Activity_komunitas_lihatprofil" />
         <activity android:name=".Activity_home" />
         <activity android:name=".Activity_login" />
-        <activity android:name=".Model.Activity_donasisaya_donasi"></activity>
-        <activity android:name=".Activity_donasisaya"></activity>
-        <activity android:name=".Activity_kodekonfirmasi"></activity>
+        <activity android:name=".Model.Activity_donasisaya_donasi" />
+        <activity android:name=".Activity_donasisaya" />
+        <activity android:name=".Activity_kodekonfirmasi" />
         <activity android:name=".Activity_daftar" />
         <activity android:name=".Activity_komunitas">
             <intent-filter>
