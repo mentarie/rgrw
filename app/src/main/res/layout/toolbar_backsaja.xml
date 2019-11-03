@@ -18,15 +18,5 @@
             android:layout_marginRight="10sp"
             android:gravity="center"
             android:src="@drawable/ic_arrow_back_white_24dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="Roboto"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
-            android:text="Profil Komunitas"
-            android:textColor="#ffffff"
-            android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>
