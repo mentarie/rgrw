@@ -8,13 +8,14 @@
     tools:context=".Activity_pemberitahuan">
 
     <include layout="@layout/toolbar_pemberitahuan" />
+
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Terbaru"
         android:textStyle="bold"
-        android:textSize="18sp"></TextView>
+        android:textSize="18sp" />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,12 +23,12 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kemarin"
         android:textStyle="bold"
-        android:textSize="18sp"></TextView>
+        android:textSize="18sp" />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
