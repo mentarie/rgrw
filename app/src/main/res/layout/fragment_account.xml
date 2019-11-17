@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AccountFragment">
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <include layout="@layout/toolbar_account" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="675dp"
         android:orientation="vertical"
         tools:context=".Activity_account">
 
@@ -20,26 +24,26 @@
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/raisa"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp">
+                android:src="@drawable/raisa">
 
             </ImageView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="24dp">
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginLeft="20dp"
                     android:text="Raisa Andriana"
                     android:textColor="#555555"
-                    android:textSize="16sp">
+                    android:textSize="16sp"
+                    android:textStyle="bold">
 
                 </TextView>
 
@@ -47,9 +51,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
                     android:text="Lihat Profil"
                     android:textColor="#639D4C"
-                    android:layout_marginTop="8dp"
                     android:textSize="12sp">
 
                 </TextView>
@@ -77,57 +81,58 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="18dp">
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/logodompet"
-                android:layout_marginLeft="40dp">
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/logodompet">
 
             </ImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="17sp"
                 android:text="Dompet Alam"
                 android:textColor="#555555"
                 android:textSize="16sp"
-                android:layout_marginTop="17sp">
+                android:textStyle="bold">
 
             </TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="17dp"
-                android:layout_marginLeft="65dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginLeft="20dp"
                     android:text="Rp 50.000"
                     android:textColor="#555555"
-                    android:textSize="16sp">
+                    android:textSize="16sp"
+                    android:textStyle="bold">
 
                 </TextView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="74dp"
                     android:layout_height="match_parent"
-                    app:cardCornerRadius="4dp"
-                    app:cardBackgroundColor="#ffffff"
-                    android:outlineAmbientShadowColor="#639D4C"
-                    android:layout_marginRight="0dp"
+                    android:layout_gravity="left"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="12dp"
-                    android:layout_gravity="left">
+                    android:layout_marginRight="0dp"
+                    android:outlineAmbientShadowColor="#639D4C"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="4dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -138,9 +143,9 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="Isi Saldo"
+                            android:textAlignment="center"
                             android:textColor="#639D4C"
-                            android:textSize="10dp"
-                            android:textAlignment="center">
+                            android:textSize="10dp">
 
                         </TextView>
                     </LinearLayout>
@@ -153,14 +158,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="18dp">
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="6dp"
-                android:background="#F4F4F4"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:background="#F4F4F4" />
 
         </LinearLayout>
 
@@ -168,23 +173,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="25dp"
-            android:layout_marginLeft="40dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Riwayat Donasi"
                 android:textColor="#555555"
-                android:textSize="16sp">
-            </TextView>
+                android:textSize="16sp"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="40dp">
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -200,9 +204,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200dp"
+                    android:layout_marginTop="8dp"
                     android:text="Rp 200.000"
                     android:textColor="#555555"
-                    android:layout_marginTop="8dp"
                     android:textSize="16sp"
                     android:textStyle="bold">
 
@@ -215,14 +219,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="18dp">
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="6dp"
-                android:background="#F4F4F4"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:background="#F4F4F4" />
 
         </LinearLayout>
 
