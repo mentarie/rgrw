@@ -33,7 +33,7 @@ public class ListKampanye_adapter extends RecyclerView.Adapter<ListKampanye_adap
     public void onBindViewHolder(@NonNull ListKampanye_adapter.ViewHolder holder, int position) {
         ListKampanye_model model = listkampanye.get(position);
         holder.item_listkampanye_judul.setText(model.getJudul());
-//        holder.item_komunitas_image.setImageResource(model.getGambar());
+        holder.item_listkampanye_img.setImageResource(model.getGambar());
         holder.list_listkampanye_lokasi.setText(model.getLokasi());
         holder.item_listkampanye_danaterkumpul.setText(model.getDanaterkumpul());
         holder.item_listkampanye_sisahari.setText(model.getSisahari());
