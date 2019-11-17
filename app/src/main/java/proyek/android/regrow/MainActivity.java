@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         setFragment(exploreFragment);
                         return true;
                     case R.id.nav_account:
-                        setFragment(exploreFragment);
+                        setFragment(accountFragment);
                         return true;
                     default:
                         return false;

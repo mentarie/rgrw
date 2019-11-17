@@ -23,10 +23,11 @@ public class Activity_komunitas extends AppCompatActivity {
         ArrayList<Komunitas_model> komunitas;
 
         komunitas=new ArrayList<>();
-        komunitas.add(new Komunitas_model(1,"","Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
-        komunitas.add(new Komunitas_model(2,"","Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
-        komunitas.add(new Komunitas_model(3,"","Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
-        komunitas.add(new Komunitas_model(4,"","Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
+//        komunitas.add(new Komunitas_model(1, item_komunitas.getContext().getResources().getDrawable(R.drawable.kemangteer),"Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
+        komunitas.add(new Komunitas_model(1, "","Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
+        komunitas.add(new Komunitas_model(2,"","Wanakalasandya", "Komunitas Lingkungan", "Kalimantan Selatan", "800 pengikut"));
+        komunitas.add(new Komunitas_model(3,"","Muda Menginspirasi", "Komunitas Lingkungan", "Yogyakarta", "800 pengikut"));
+        komunitas.add(new Komunitas_model(4,"","Lindungi Hutan", "Komunitas Lingkungan", "Yogyakarta", "3000 pengikut"));
 
         Komunitas_adapter adapter ;
         adapter = new Komunitas_adapter(komunitas);

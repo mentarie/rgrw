@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_account"></activity>
+        <activity android:name=".Activity_pemberitahuan"></activity>
+        <activity android:name=".Activity_listkampanye" />
+        <activity android:name=".Activity_account" />
         <activity android:name=".Activity_buktipelaksanaan" />
         <activity android:name=".Activity_isisaldo" />
-        <activity android:name=".activity_komunitas_lihatprofil_foto" />
+        <activity android:name=".Activity_komunitas_lihatprofil_foto" />
         <activity android:name=".Activity_komunitas_lihatprofil" />
         <activity android:name=".Activity_home" />
         <activity android:name=".Activity_login">
@@ -28,11 +30,8 @@
         <activity android:name=".Activity_donasisaya" />
         <activity android:name=".Activity_kodekonfirmasi" />
         <activity android:name=".Activity_daftar" />
-        <activity android:name=".Activity_komunitas">
-        </activity>
-        <activity android:name=".MainActivity" >
-
-        </activity>
+        <activity android:name=".Activity_komunitas" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

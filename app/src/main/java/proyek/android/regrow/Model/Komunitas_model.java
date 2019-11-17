@@ -1,7 +1,10 @@
 package proyek.android.regrow.Model;
 
+import android.graphics.drawable.Drawable;
+
 public class Komunitas_model {
     private int id;
+//    private Drawable gambar;
     private String gambar, nama, keterangan, lokasi, pengikut;
 
     public Komunitas_model(int id, String gambar, String nama, String keterangan, String lokasi, String pengikut) {

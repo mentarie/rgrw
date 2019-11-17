@@ -52,7 +52,7 @@
             android:layout_marginTop="5dp"
             android:fontFamily="Roboto"
             android:gravity="left"
-            android:text="Kode kami kirimkan ke nomor"
+            android:text="Kode kami kirimkan ke nomor +62 "
             android:textColor="#ADADAD"
             android:textSize="12sp" />
 
@@ -83,8 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:inputType="number"
-            android:itemBackground="@color/colorPrimary"
-            android:textColor="@android:color/white"
+            android:itemBackground="#ffffff"
+            android:textColor="#555555"
             app:itemCount="6"
             app:lineColor="@color/colorPrimary"
             app:viewType="line"

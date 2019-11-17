@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_komunitas_lihatprofil_foto">
+    tools:context=".Activity_komunitas_lihatprofil_foto">
 
     <include layout="@layout/toolbar_backsaja" />
     <LinearLayout
