@@ -3,11 +3,11 @@ package proyek.android.regrow.Model;
 import android.graphics.drawable.Drawable;
 
 public class Komunitas_model {
-    private int id;
+    private int id, gambar;
 //    private Drawable gambar;
-    private String gambar, nama, keterangan, lokasi, pengikut;
+    private String nama, keterangan, lokasi, pengikut;
 
-    public Komunitas_model(int id, String gambar, String nama, String keterangan, String lokasi, String pengikut) {
+    public Komunitas_model(int id, int gambar, String nama, String keterangan, String lokasi, String pengikut) {
         this.id = id;
         this.gambar = gambar;
         this.nama = nama;
@@ -20,7 +20,7 @@ public class Komunitas_model {
         return id;
     }
 
-    public String getGambar() {
+    public int getGambar() {
         return gambar;
     }
 

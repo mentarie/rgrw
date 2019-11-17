@@ -39,7 +39,7 @@ public class Komunitas_adapter extends RecyclerView.Adapter<Komunitas_adapter.Vi
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Komunitas_model model = komunitas.get(position);
         holder.item_komunitas_title.setText(model.getNama());
-//        holder.item_komunitas_image.setImageResource(model.getGambar());
+        holder.item_komunitas_image.setImageResource(model.getGambar());
         holder.item_komunitas_nama.setText(model.getKeterangan());
         holder.item_komunitas_lokasi.setText(model.getLokasi());
         holder.item_komunitas_pengikut.setText(model.getPengikut());

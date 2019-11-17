@@ -34,11 +34,12 @@ public class ExploreFragment extends Fragment {
         ArrayList<Komunitas_model> komunitas;
 
         komunitas=new ArrayList<>();
-//        komunitas.add(new Komunitas_model(1, item_komunitas.getContext().getResources().getDrawable(R.drawable.kemangteer),"Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
-        komunitas.add(new Komunitas_model(1, "","Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
-        komunitas.add(new Komunitas_model(2,"","Wanakalasandya", "Komunitas Lingkungan", "Kalimantan Selatan", "800 pengikut"));
-        komunitas.add(new Komunitas_model(3,"","Muda Menginspirasi", "Komunitas Lingkungan", "Yogyakarta", "800 pengikut"));
-        komunitas.add(new Komunitas_model(4,"","Lindungi Hutan", "Komunitas Lingkungan", "Yogyakarta", "3000 pengikut"));
+        komunitas.add(new Komunitas_model(1,getResources().getIdentifier("kemangteer", "drawable", getActivity().getPackageName()),"Kemangteer", "Komunitas Mangrove", "Yogyakarta", "1000 pengikut"));
+        komunitas.add(new Komunitas_model(2,getResources().getIdentifier("wanakalasandya", "drawable", getActivity().getPackageName()),"Wanakalasandya", "Komunitas Lingkungan", "Kalimantan Selatan", "800 pengikut"));
+        komunitas.add(new Komunitas_model(3,getResources().getIdentifier("mudamenginspirasi", "drawable", getActivity().getPackageName()),"Muda Menginspirasi", "Komunitas Lingkungan", "Yogyakarta", "800 pengikut"));
+        komunitas.add(new Komunitas_model(4,getResources().getIdentifier("lindungihutan", "drawable", getActivity().getPackageName()),"Lindungi Hutan", "Komunitas Lingkungan", "Yogyakarta", "3000 pengikut"));
+        komunitas.add(new Komunitas_model(5,getResources().getIdentifier("logo_komunitas", "drawable", getActivity().getPackageName()),"Pecinta Alam Kaltim", "Komunitas Reboisasi", "Kalimantan Timur", "1051 pengikut"));
+        komunitas.add(new Komunitas_model(5,getResources().getIdentifier("logoregrow", "drawable", getActivity().getPackageName()),"ReGrow", "Komunitas Reboisasi", "Yogyakarta", "650 pengikut"));
 
         Komunitas_adapter adapter ;
         adapter = new Komunitas_adapter(komunitas);

@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/item_komunitas_image"
-        android:layout_width="100dp"
-        android:layout_height="130dp"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
         android:src="@drawable/logoregrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="Kemangteer"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/item_komunitas_image"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +33,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:text="Mangrove Community"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/item_komunitas_image"
         app:layout_constraintTop_toBottomOf="@id/item_komunitas_title" />
 
@@ -44,7 +44,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:text="Yogyakarta"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/item_komunitas_image"
         app:layout_constraintTop_toBottomOf="@id/item_komunitas_nama" />
 
@@ -55,9 +55,6 @@
         android:src="@drawable/ic_favorite_pink_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- android:layout_marginEnd="24dp"
-     android:textAlignment="viewEnd"
- -->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
