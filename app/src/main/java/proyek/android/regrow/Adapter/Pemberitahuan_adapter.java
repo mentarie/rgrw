@@ -31,6 +31,7 @@ public class Pemberitahuan_adapter extends RecyclerView.Adapter<Pemberitahuan_ad
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pemberitahuan_model model = pemberitahuan.get(position);
+        holder.item_pemberitahuan_img.setImageResource(model.getGambar());
         holder.item_pemberitahuan_desc.setText(model.getDeskripsi());
         holder.item_pemberitahuan_imgdesc.setImageResource(model.getDeskripsi_gambar());
     }

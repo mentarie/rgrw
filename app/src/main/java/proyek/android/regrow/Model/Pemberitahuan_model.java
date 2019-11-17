@@ -1,10 +1,10 @@
 package proyek.android.regrow.Model;
 
 public class Pemberitahuan_model {
-    private int id, deskripsi_gambar;
-    private String gambar, deskripsi;
+    private int id, deskripsi_gambar, gambar;
+    private String deskripsi;
 
-    public Pemberitahuan_model(int id, int deskripsi_gambar, String gambar, String deskripsi) {
+    public Pemberitahuan_model(int id, int deskripsi_gambar, int gambar, String deskripsi) {
         this.id = id;
         this.deskripsi_gambar = deskripsi_gambar;
         this.gambar = gambar;
@@ -23,15 +23,11 @@ public class Pemberitahuan_model {
         return deskripsi_gambar;
     }
 
-    public void setDeskripsi_gambar(int deskripsi_gambar) {
-        this.deskripsi_gambar = deskripsi_gambar;
-    }
+    public void setDeskripsi_gambar(int deskripsi_gambar) { this.deskripsi_gambar = deskripsi_gambar; }
 
-    public String getGambar() {
-        return gambar;
-    }
+    public int getGambar() { return gambar; }
 
-    public void setGambar(String gambar) {
+    public void setGambar(int gambar) {
         this.gambar = gambar;
     }
 

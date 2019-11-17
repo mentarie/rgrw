@@ -25,8 +25,7 @@
         android:fontFamily="Roboto"
         android:text="Pecinta Alam Kaltim mengirim post. 11 jam"
         android:textColor="#555555"
-        android:textSize="13sp"
-        android:textStyle="bold" />
+        android:textSize="13sp"/>
 
     <ImageView
         android:id="@+id/item_pemberitahuan_imgdesc"
