@@ -51,21 +51,21 @@ public class HomeFragment extends Fragment {
 
         ArrayList<ListKampanye_model> listkampanye;
         listkampanye=new ArrayList<>();
-        listkampanye.add(new ListKampanye_model(1, getResources().getIdentifier("lk1", "drawable", fragmentView.getContext().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(1, getResources().getIdentifier("@drawable/lk1", "drawable", getActivity().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
                 "Kalimantan Timur", "Pecinta ALam Kaltim", "Rp 500.000.089", "40"));
-        listkampanye.add(new ListKampanye_model(2,getResources().getIdentifier("lk2", "drawable", fragmentView.getContext().getPackageName()),"#PenebanganLiar - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(2,getResources().getIdentifier("@drawable/lk2", "drawable", getActivity().getPackageName()),"#PenebanganLiar - ReGrow Hutan\n" +
                 "Sumatera Utara", "Pecinta Alam Sumut", "Rp 90.000.000", "50"));
-        listkampanye.add(new ListKampanye_model(3,getActivity().getResources().getIdentifier("lk3", "drawable", getActivity().getApplicationContext().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(3,getResources().getIdentifier("@drawable/lk3", "drawable", getActivity().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
                 "Kalimantan Timur", "Komunitas Reboisasi Sumbar", "Rp 100.000.000", "60"));
-        listkampanye.add(new ListKampanye_model(4,getActivity().getResources().getIdentifier("lk4", "drawable", getActivity().getApplicationContext().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(4,getResources().getIdentifier("@drawable/lk4", "drawable", getActivity().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
                 "Kalimantan Timur", "Komunitas ReGrow", "Rp 50.000.000", "80"));
-        listkampanye.add(new ListKampanye_model(5, getActivity().getResources().getIdentifier("lk1", "drawable", getActivity().getApplicationContext().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(5, getResources().getIdentifier("@drawable/lk1", "drawable", getActivity().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
                 "Kalimantan Timur", "Pecinta ALam Kaltim", "Rp 500.000.089", "40"));
-        listkampanye.add(new ListKampanye_model(6,getActivity().getResources().getIdentifier("lk2", "drawable", getActivity().getApplicationContext().getPackageName()),"#PenebanganLiar - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(6,getResources().getIdentifier("@drawable/lk2", "drawable", getActivity().getPackageName()),"#PenebanganLiar - ReGrow Hutan\n" +
                 "Sumatera Utara", "Pecinta Alam Sumut", "Rp 90.000.000", "50"));
-        listkampanye.add(new ListKampanye_model(7,getActivity().getResources().getIdentifier("lk3", "drawable", getActivity().getApplicationContext().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(7,getResources().getIdentifier("@drawable/lk3", "drawable", getActivity().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
                 "Kalimantan Timur", "Komunitas Reboisasi Sumbar", "Rp 100.000.000", "60"));
-        listkampanye.add(new ListKampanye_model(8,getActivity().getResources().getIdentifier("lk4", "drawable", getActivity().getApplicationContext().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
+        listkampanye.add(new ListKampanye_model(8,getResources().getIdentifier("@drawable/lk4", "drawable", getActivity().getPackageName()),"#KebakaranHutan - ReGrow Hutan\n" +
                 "Kalimantan Timur", "Komunitas ReGrow", "Rp 50.000.000", "80"));
 
         ListKampanye_adapter adapter ;
