@@ -13,27 +13,15 @@ public class ListKampanye_model {
         this.sisahari = sisahari;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() {return id;}
 
-    public int getGambar() {
-        return gambar;
-    }
+    public int getGambar() {return gambar;}
 
-    public String getJudul() {
-        return judul;
-    }
+    public String getJudul() {return judul;}
 
-    public String getLokasi() {
-        return lokasi;
-    }
+    public String getLokasi() {return lokasi;}
 
-    public String getDanaterkumpul() {
-        return danaterkumpul;
-    }
+    public String getDanaterkumpul() {return danaterkumpul;}
 
-    public String getSisahari() {
-        return sisahari;
-    }
+    public String getSisahari() {return sisahari;}
 }

@@ -4,13 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity_pemberitahuan">
 
+    <include layout="@layout/toolbar_pemberitahuan" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terbaru"
+        android:textStyle="bold"
+        android:textSize="18sp"></TextView>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/item_pemberitahuan">
-
     </androidx.recyclerview.widget.RecyclerView>
 
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kemarin"
+        android:textStyle="bold"
+        android:textSize="18sp"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_pemberitahuan2">
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

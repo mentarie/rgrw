@@ -9,5 +9,5 @@
     <!-- TODO: Update blank fragment layout -->
     <include layout="@layout/toolbar_home" />
     <include
-        layout="@layout/item_listkampanye" />
+        layout="@layout/activity_listkampanye" />
 </LinearLayout>
