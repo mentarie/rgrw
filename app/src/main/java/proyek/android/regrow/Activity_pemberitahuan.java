@@ -1,6 +1,7 @@
 package proyek.android.regrow;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,11 +26,11 @@ public class Activity_pemberitahuan extends AppCompatActivity {
         ArrayList<Pemberitahuan_model> pemberitahuan;
 
         pemberitahuan=new ArrayList<>();
-        pemberitahuan.add(new Pemberitahuan_model(1,"","Pecinta Alam Kaltim - Pecinta Alam Kaltim mengirim post. 11 jam", ""));
-        pemberitahuan.add(new Pemberitahuan_model(2,"","Progress  : Kegiatan Reboisasi Telah Terlaksana! - Regrow Hutan kalimantan Timur\n" +
-                "Pecinta Alam Kaltim. 13 jam", ""));
-        pemberitahuan.add(new Pemberitahuan_model(3,"","Kemangteer - Kemangteer Jogja mengirim post. 1 hari", ""));
-        pemberitahuan.add(new Pemberitahuan_model(4,"","Wanakalasandya - Wanakalasandya mengirim post. 23 j", ""));
+        pemberitahuan.add(new Pemberitahuan_model(1, getResources().getIdentifier("galeri1", "drawable", this.getPackageName()),"Pecinta Alam Kaltim - Pecinta Alam Kaltim mengirim post. 11 jam", "Lorem ipsum color sit amet"));
+        pemberitahuan.add(new Pemberitahuan_model(2,getResources().getIdentifier("galeri2", "drawable", this.getPackageName()),"Progress  : Kegiatan Reboisasi Telah Terlaksana! - Regrow Hutan kalimantan Timur\n" +
+                "Pecinta Alam Kaltim. 13 jam", "Lorem ipsum color sit amet"));
+        pemberitahuan.add(new Pemberitahuan_model(3,getResources().getIdentifier("galeri3", "drawable", this.getPackageName()),"Kemangteer - Kemangteer Jogja mengirim post. 1 hari", "Lorem ipsum color sit amet"));
+        pemberitahuan.add(new Pemberitahuan_model(4,getResources().getIdentifier("galeri1", "drawable", this.getPackageName()),"Wanakalasandya - Wanakalasandya mengirim post. 23 j", "Lorem ipsum color sit amet"));
 
         Pemberitahuan_adapter adapter ;
         adapter = new Pemberitahuan_adapter(pemberitahuan);
