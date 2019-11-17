@@ -32,7 +32,7 @@ public class Pemberitahuan_adapter extends RecyclerView.Adapter<Pemberitahuan_ad
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pemberitahuan_model model = pemberitahuan.get(position);
         holder.item_pemberitahuan_desc.setText(model.getDeskripsi());
-        holder.item_pemberitahuan_imgdesc.setText(model.getDeskripsi_gambar());
+        holder.item_pemberitahuan_imgdesc.setImageResource(model.getDeskripsi_gambar());
     }
 
     public int getItemCount() {
@@ -40,8 +40,8 @@ public class Pemberitahuan_adapter extends RecyclerView.Adapter<Pemberitahuan_ad
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView item_pemberitahuan_img;
-        TextView item_pemberitahuan_desc, item_pemberitahuan_imgdesc;
+        ImageView item_pemberitahuan_img, item_pemberitahuan_imgdesc;
+        TextView item_pemberitahuan_desc;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

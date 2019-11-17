@@ -1,48 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="23dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="23dp"
-        android:layout_marginRight="23dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <ImageView
-                android:id="@+id/item_pemberitahuan_img"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/logo_komunitas"
-                >
+    <ImageView
+        android:id="@+id/item_pemberitahuan_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo_komunitas" />
 
-            </ImageView>
+    <TextView
+        android:id="@+id/item_pemberitahuan_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:fontFamily="Roboto"
+        android:text="Pecinta Alam Kaltim mengirim post. 11 jam"
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/item_pemberitahuan_desc"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Pecinta Alam Kaltim mengirim post. 11 jam"
-                android:textSize="13sp"
-                android:textColor="#555555"
-                android:fontFamily="Roboto"
-                android:textStyle="bold"
-                android:layout_marginLeft="19dp"
-                android:layout_marginRight="12dp"/>
-            <ImageView
-                android:id="@+id/item_pemberitahuan_imgdesc"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/logo_komunitas"
-                >
+    <ImageView
+        android:id="@+id/item_pemberitahuan_imgdesc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:src="@drawable/logo_komunitas" />
 
-            </ImageView>
-
-        </LinearLayout>
-        
-    </LinearLayout>
 </LinearLayout>
