@@ -8,10 +8,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 
 public class HomeFragment extends Fragment {
+    public static final String TAG = "bottom_sheet";
+
     public HomeFragment() {
 
     }
@@ -34,6 +38,16 @@ public class HomeFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        CardView isi_saldo = fragmentView.findViewById(R.id.isi_saldo);
+        isi_saldo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentSheet_Donasi fragment = new FragmentSheet_Donasi();
+                fragment.show(((FragmentActivity) getActivity()).getSupportFragmentManager(), TAG);
+            }
+        });
+
         return fragmentView;
     }
 }
