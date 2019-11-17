@@ -24,6 +24,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:text="Donasi"
+            android:textAlignment="textStart"
             android:textColor="#ffffff"
             android:textSize="18sp" />
     </LinearLayout>

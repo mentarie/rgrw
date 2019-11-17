@@ -7,12 +7,4 @@
     android:orientation="vertical"
     tools:context=".Activity_home">
 
-    <include layout="@layout/toolbar_home"></include>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-    </LinearLayout>
 </LinearLayout>
