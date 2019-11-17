@@ -118,7 +118,7 @@ public class Activity_kodekonfirmasi extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //verification successful we will start the profile activity
-                            Intent intent = new Intent(Activity_kodekonfirmasi.this, Activity_home.class);
+                            Intent intent = new Intent(Activity_kodekonfirmasi.this, MainActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 

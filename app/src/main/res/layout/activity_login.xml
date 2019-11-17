@@ -149,8 +149,8 @@
         android:layout_height="80dp"
         android:layout_marginTop="30dp">
 
-        <include layout="@layout/button_putih"></include>
-        >
+        <include layout="@layout/button_putih" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -161,8 +161,9 @@
         android:weightSum="2">
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="Lupa Detail?"
             android:textAlignment="center"
@@ -175,8 +176,9 @@
             android:background="#BCBEC0" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="Buat Akun?"
             android:textAlignment="center"
