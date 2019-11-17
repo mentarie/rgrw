@@ -8,6 +8,9 @@
 
     <!-- TODO: Update blank fragment layout -->
     <include layout="@layout/toolbar_home" />
-    <include
-        layout="@layout/activity_listkampanye" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_listkampanye">
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>
