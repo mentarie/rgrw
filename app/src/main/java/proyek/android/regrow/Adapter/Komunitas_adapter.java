@@ -1,6 +1,7 @@
 package proyek.android.regrow.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import proyek.android.regrow.Activity_komunitas_lihatprofil;
 import proyek.android.regrow.Model.Komunitas_model;
 import proyek.android.regrow.R;
 
@@ -38,6 +40,7 @@ public class Komunitas_adapter extends RecyclerView.Adapter<Komunitas_adapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Komunitas_model model = komunitas.get(position);
+        holder.id=model.getId();
         holder.item_komunitas_title.setText(model.getNama());
         holder.item_komunitas_image.setImageResource(model.getGambar());
         holder.item_komunitas_nama.setText(model.getKeterangan());
@@ -50,17 +53,27 @@ public class Komunitas_adapter extends RecyclerView.Adapter<Komunitas_adapter.Vi
         return komunitas.size();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        int id;
         ImageView item_komunitas_image;
         TextView item_komunitas_title, item_komunitas_nama, item_komunitas_lokasi,item_komunitas_pengikut;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            itemView.setOnClickListener(this);
             item_komunitas_image = itemView.findViewById(R.id.item_komunitas_image);
             item_komunitas_title = itemView.findViewById(R.id.item_komunitas_title);
             item_komunitas_nama = itemView.findViewById(R.id.item_komunitas_nama);
             item_komunitas_lokasi = itemView.findViewById(R.id.item_komunitas_lokasi);
             item_komunitas_pengikut = itemView.findViewById(R.id.item_komunitas_pengikut);
+        }
+
+        @Override
+        public void onClick(View view) {
+            if (id==1){
+                Intent i = new Intent(itemView.getContext(), Activity_komunitas_lihatprofil.class);
+                itemView.getContext().startActivity(i);
+            }
         }
     }
 }
