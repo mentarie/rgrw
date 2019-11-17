@@ -10,6 +10,7 @@
     <include layout="@layout/toolbar_pemberitahuan" />
 
     <TextView
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Kemarin"
         android:textStyle="bold"
+        android:layout_marginLeft="20dp"
         android:textSize="18sp" />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
