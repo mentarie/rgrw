@@ -235,24 +235,24 @@
             android:layout_gravity="center"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"/>
-        <androidx.cardview.widget.CardView
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_isisaldo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#ECECEC"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:clickable="false">
 
             <TextView
-                android:id="@+id/button_isisaldo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:text="ISI SALDO"
-                android:clickable="false"/>
+                android:text="ISI SALDO"/>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 </LinearLayout>

@@ -27,7 +27,7 @@
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
                 android:gravity="center"/>
-            <TextView
+            1<TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="0"
@@ -240,7 +240,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"/>
         <androidx.cardview.widget.CardView
-
+            android:id="@+id/isiSaldo_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             app:cardCornerRadius="8dp"

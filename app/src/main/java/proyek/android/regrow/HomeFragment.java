@@ -75,12 +75,18 @@ public class HomeFragment extends Fragment {
         item_listkampanye.setAdapter(adapter);
 
 // saldo
-
+        final HasilCallbacks callbacks = new HasilCallbacks() {
+            @Override
+            public void callbacks() {
+                FragmentSheet_IsiSaldo fragment = new FragmentSheet_IsiSaldo(null, true);
+                fragment.show(((FragmentActivity) getActivity()).getSupportFragmentManager(), TAG);
+            }
+        };
         CardView isi_saldo = fragmentView.findViewById(R.id.isi_saldo);
         isi_saldo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentSheet_IsiSaldo fragment = new FragmentSheet_IsiSaldo();
+                FragmentSheet_IsiSaldo fragment = new FragmentSheet_IsiSaldo(callbacks, false);
                 fragment.show(((FragmentActivity) getActivity()).getSupportFragmentManager(), TAG);
             }
         });

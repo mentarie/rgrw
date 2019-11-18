@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import static android.provider.FontsContract.FontFamilyResult.STATUS_OK;
+
 public class Activity_MetodePembayaran extends AppCompatActivity {
 
     @Override
@@ -18,7 +20,7 @@ public class Activity_MetodePembayaran extends AppCompatActivity {
         bank_mandiri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setResult(69);
+                setResult(RESULT_OK);
                 finish();
             }
         });

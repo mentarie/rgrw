@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +18,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import static android.app.Activity.RESULT_OK;
@@ -27,7 +29,14 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
     private TextView txtQuantity;
     Context mContext;
     ProgressDialog loading;
+    private View view;
+    private boolean invalidated = false;
     private BottomSheetBehavior mBottomSheetBehavior;
+    private HasilCallbacks hasilCallbacks;
+    public FragmentSheet_IsiSaldo(HasilCallbacks hasilCallbacks, boolean invalidated){
+        this.hasilCallbacks = hasilCallbacks;
+        this.invalidated = invalidated;
+    }
 
     @Override
     public void onCancel(DialogInterface dialog) {
@@ -39,8 +48,12 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
     @Override
     public void setupDialog(Dialog dialog, int style) {
         super.setupDialog(dialog, style);
+        if(invalidated){
+            view = LayoutInflater.from(getContext()).inflate(R.layout.bottomsheetview_isisaldo2, null);
+        }else{
+            view = LayoutInflater.from(getContext()).inflate(R.layout.activity_isisaldo, null);
+        }
 
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.activity_isisaldo, null);
         dialog.setContentView(view);
 
         mContext = getActivity();
@@ -69,7 +82,7 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getContext(), Activity_MetodePembayaran.class);
-                startActivityForResult(i, 6969);
+                startActivityForResult(i, 69);
             }
         });
     }
@@ -82,7 +95,8 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 69 && resultCode == RESULT_OK){
-            Log.d("Tag", "Msg: ");
+           hasilCallbacks.callbacks();
+           this.dismiss();
         }
     }
 }
