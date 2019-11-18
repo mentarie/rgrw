@@ -8,10 +8,7 @@ import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
@@ -19,7 +16,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-public class FragmentSheet_Donasi extends BottomSheetDialogFragment {
+public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
     Integer i = 1;
     private Button btnConfirm;
     private TextView txtQuantity;
@@ -38,7 +35,7 @@ public class FragmentSheet_Donasi extends BottomSheetDialogFragment {
     public void setupDialog(Dialog dialog, int style) {
         super.setupDialog(dialog, style);
 
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.bottomsheetview_donasi, null);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.activity_isisaldo, null);
         dialog.setContentView(view);
 
         mContext = getActivity();

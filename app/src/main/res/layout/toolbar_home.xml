@@ -24,7 +24,11 @@
                 android:layout_height="25dp"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/logoregrow" />
-
+            <include
+                layout="@layout/button_search_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
             <ImageView
                 android:id="@+id/home_pemberitahuan"
                 android:layout_width="25dp"
@@ -32,12 +36,6 @@
                 android:layout_marginLeft="10dp"
                 android:clickable="true"
                 android:src="@drawable/ic_notifications_none_black_24dp" />
-
-            <include
-                layout="@layout/button_search_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp" />
 
         </LinearLayout>
     </LinearLayout>

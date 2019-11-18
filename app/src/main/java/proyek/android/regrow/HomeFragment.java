@@ -80,7 +80,7 @@ public class HomeFragment extends Fragment {
         isi_saldo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentSheet_Donasi fragment = new FragmentSheet_Donasi();
+                FragmentSheet_IsiSaldo fragment = new FragmentSheet_IsiSaldo();
                 fragment.show(((FragmentActivity) getActivity()).getSupportFragmentManager(), TAG);
             }
         });
