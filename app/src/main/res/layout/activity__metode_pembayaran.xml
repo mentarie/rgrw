@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        tools:context=".Activity_MetodePembayaran">
+
+<include layout="@layout/toolbar_metodepembayaran" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#21000000"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="Roboto"
+        android:gravity="center"
+        android:text="Virtual Account ( Verifikasi Otomatis )"
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10sp"
+        android:gravity="left"
+        android:src="@drawable/bca" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="Roboto"
+        android:gravity="center"
+        android:text="BCA Virtual Account"
+        android:textColor="#555555"
+        android:textSize="13sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#21000000"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="Roboto"
+        android:gravity="center"
+        android:text="Transfer Bank ( Verifikasi Manual )"
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bca" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="Transfer BCA"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="11dp"
+        android:background="#c4c4c4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/bank_mandiri"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/mandiri" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="Transfer Mandiri"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="11dp"
+        android:background="#c4c4c4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="Transfer BNI"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="11dp"
+        android:background="#c4c4c4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bnis" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="Transfer BNI Syariah"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="11dp"
+        android:background="#c4c4c4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:gravity="left"
+            android:src="@drawable/bri" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="Transfer BRI"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="11dp"
+        android:background="#c4c4c4" />
+</LinearLayout>
+</LinearLayout>

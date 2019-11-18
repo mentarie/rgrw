@@ -5,6 +5,8 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +16,10 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import static android.app.Activity.RESULT_OK;
 
 public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
     Integer i = 1;
@@ -58,9 +63,26 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
                 }
             });
         }
+
+        TextView pilih_metodePembayaran = view.findViewById(R.id.pilih_metodePembayaran);
+        pilih_metodePembayaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), Activity_MetodePembayaran.class);
+                startActivityForResult(i, 6969);
+            }
+        });
     }
 
     private void handleUserExit() {
         //Toast.makeText(getActivity(), "Added to Cart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 69 && resultCode == RESULT_OK){
+            Log.d("Tag", "Msg: ");
+        }
     }
 }
