@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,6 +57,15 @@ public class Activity_kodekonfirmasi extends AppCompatActivity {
         otpView.setOtpCompletionListener(new OnOtpCompletionListener() {
             @Override public void onOtpCompleted(String otp) {
                 verifyVerificationCode(otp);
+            }
+        });
+
+        //back
+        ImageView back_loginverifikasi = findViewById(R.id.back_loginverifikasi);
+        back_loginverifikasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
             }
         });
     }

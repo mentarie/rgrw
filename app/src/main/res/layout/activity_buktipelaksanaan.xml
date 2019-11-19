@@ -9,7 +9,8 @@
     <include layout="@layout/toolbar_buktipelaksanaan"></include>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="300dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -23,15 +24,18 @@
             android:gravity="left"
             android:layout_marginLeft="20dp">
         </TextView>
-<!--maps-->
 
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maps" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
         android:orientation="vertical">
 
         <TextView

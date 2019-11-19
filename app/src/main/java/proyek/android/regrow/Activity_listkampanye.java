@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -46,5 +48,14 @@ public class Activity_listkampanye extends AppCompatActivity {
         RecyclerView.LayoutManager layout_manager = new LinearLayoutManager(getApplicationContext());
         item_listkampanye.setLayoutManager(layout_manager);
         item_listkampanye.setAdapter(adapter);
+
+        //back
+        ImageView back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 }

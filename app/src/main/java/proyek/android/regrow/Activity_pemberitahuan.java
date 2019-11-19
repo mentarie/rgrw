@@ -30,6 +30,7 @@ public class Activity_pemberitahuan extends AppCompatActivity {
         ArrayList<Pemberitahuan_model> pemberitahuan;
 
         pemberitahuan=new ArrayList<>();
+        pemberitahuan.add(new Pemberitahuan_model(9, getResources().getIdentifier("galeri2", "drawable", this.getPackageName()),getResources().getIdentifier("mudamenginspirasi", "drawable", this.getPackageName()), "Muda Menginspirasi - Muda Menginspirasi mengirim post. 2 jam"));
         pemberitahuan.add(new Pemberitahuan_model(8, getResources().getIdentifier("galeri1", "drawable", this.getPackageName()),getResources().getIdentifier("logo_komunitas", "drawable", this.getPackageName()), "Pecinta Alam Kaltim - Pecinta Alam Kaltim mengirim post. 11 jam"));
         pemberitahuan.add(new Pemberitahuan_model(7,getResources().getIdentifier("", "drawable", this.getPackageName()),getResources().getIdentifier("logo_komunitas", "drawable", this.getPackageName()), "Progress  : Kegiatan Reboisasi Telah Terlaksana! - Regrow Hutan kalimantan Timur Pecinta Alam Kaltim. 13 jam"));
         pemberitahuan.add(new Pemberitahuan_model(6,getResources().getIdentifier("galeri3", "drawable", this.getPackageName()),getResources().getIdentifier("kemangteer", "drawable", this.getPackageName()), "Kemangteer - Kemangteer Jogja mengirim post. 20 jam"));
@@ -64,8 +65,7 @@ public class Activity_pemberitahuan extends AppCompatActivity {
 
         pemberitahuan3=new ArrayList<>();
         pemberitahuan3.add(new Pemberitahuan_model(2,getResources().getIdentifier("galeri1", "drawable", this.getPackageName()),getResources().getIdentifier("wanakalasandya", "drawable", this.getPackageName()), "Wanakalasandya - Wanakalasandya mengirim post. 19 Sep"));
-        pemberitahuan3.add(new Pemberitahuan_model(1,getResources().getIdentifier("", "drawable", this.getPackageName()),getResources().getIdentifier("logo_komunitas", "drawable", this.getPackageName()), "Progress  : Dana Donasi Telah Digunakan! - Regrow Hutan kalimantan Timur\n" +
-                "Pecinta Alam Kaltim. 1 hari"));
+        pemberitahuan3.add(new Pemberitahuan_model(1,getResources().getIdentifier("", "drawable", this.getPackageName()),getResources().getIdentifier("logo_komunitas", "drawable", this.getPackageName()), "Progress  : Dana Donasi Telah Diterima! - Regrow Hutan kalimantan Timur Pecinta Alam Kaltim. 19 Sep"));
 
         Pemberitahuan_Kemarin_adapter adapter3 ;
         adapter3 = new Pemberitahuan_Kemarin_adapter(pemberitahuan3);
@@ -81,5 +81,7 @@ public class Activity_pemberitahuan extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+
     }
 }

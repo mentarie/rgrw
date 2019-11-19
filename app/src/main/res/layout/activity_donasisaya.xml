@@ -127,6 +127,8 @@
                     android:textSize="10sp" />
 
                 <ImageView
+                    android:id="@+id/donasisaya_kamis"
+                    android:clickable="true"
                     android:layout_width="30dp"
                     android:layout_height="33dp"
                     android:gravity="left"

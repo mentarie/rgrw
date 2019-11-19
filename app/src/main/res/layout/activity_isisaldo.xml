@@ -9,254 +9,327 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <include layout="@layout/toolbar_pembayaran" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp">
-        <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ECECEC">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Rp"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:gravity="center"/>
-            1<TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="0"
-                android:textAlignment="textEnd"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center">
-            </TextView>
-        </LinearLayout>
-
+            android:layout_height="wrap_content"
+            android:text="Instruksi Pembayaran"
+            android:fontFamily="Roboto"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#555555"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:text="Transfer sesuai nominal di bawah ini :"
+            android:fontFamily="Roboto"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#555555"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="115dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_whitebutton"
-                android:layout_marginRight="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Rp"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="50.000"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="115dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_whitebutton"
-                android:layout_marginRight="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Rp"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="100.000"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="115dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_whitebutton">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Rp"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="150.000"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp"
-            android:clickable="false">
-            <LinearLayout
-                android:layout_width="115dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_whitebutton"
-                android:layout_marginRight="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Rp"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="250.000"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="115dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_whitebutton"
-                android:layout_marginRight="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Rp"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="500.000"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="115dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_whitebutton">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Rp"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="10dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="100.000.000"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#BCBEC0"
-            android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp">
-
+            android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Metode Pembayaran"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
-
-            <TextView
-                android:id="@+id/pilih_metodePembayaran"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="PILIH"
-                android:gravity="center"
-                android:textColor="#639D4C"
-                android:textAlignment="viewEnd"
+                android:layout_height="wrap_content"
+                android:text="Rp 150.121"
+                android:fontFamily="Roboto"
                 android:textStyle="bold"
-                android:clickable="true"
-                />
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#BCBEC0"
-            android:layout_gravity="center"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"/>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/isiSaldo_button"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="#ECECEC"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp">
-
-            <TextView
-                android:id="@+id/button_isisaldo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="155dp"
+                android:textSize="21sp"
                 android:textAlignment="center"
-                android:gravity="center"
+                android:textColor="#555555"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALIN"
+                android:fontFamily="Roboto"
                 android:textStyle="bold"
-                android:text="ISI SALDO"
-                android:clickable="false"/>
-        </androidx.cardview.widget.CardView>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="11sp"
+                android:textAlignment="center"
+                android:textColor="#639D4C"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:background="#EFD782">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/warning"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PENTING! Mohon transfer tepat sampai 3 angka terakhir agar isi saldo
+    terverifikasi otomatis"
+                    android:textSize="11sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="6dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="#e4e4e4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Isi Saldo"
+                        android:fontFamily="Roboto"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#7b7b7b"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 150.000"
+                        android:fontFamily="Roboto"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#7b7b7b"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c4c4c4"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="12dp"
+                    >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kode Unik (*)"
+                        android:fontFamily="Roboto"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#7b7b7b"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="121"
+                        android:fontFamily="Roboto"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#7b7b7b"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="* 3 angka terakhir akan masuk ke saldomu."
+            android:fontFamily="Roboto"
+            android:textSize="10.5sp"
+            android:textColor="#555555"
+            android:layout_marginLeft="25dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#f4f4f4"
+            android:layout_marginTop="12dp"
+            >
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:text="Pembayaran dilakukan ke rekening a/n"
+            android:fontFamily="Roboto"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#555555"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dompet ReGrow a.n. Raisa Andriana"
+            android:fontFamily="Roboto"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#555555"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="#33EEE8D4"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="26dp"
+
+                android:layout_marginRight="40dp"
+                android:src="@drawable/mandiri" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="Roboto"
+                android:text="167 000 110 8316"
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto"
+                android:text="SALIN"
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="23dp"
+                android:fontFamily="Roboto"
+                android:text="Transfer sebelum 12 Oct 2019 19:43 WIB atau isi saldo kamu
+    otomatis dibatalkan oleh sistem."
+                android:textColor="#555555"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#f4f4f4"
+            android:layout_marginTop="12dp"
+            >
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batal_isisaldo"
+                android:text="Batalkan Isi Saldo"
+                android:clickable="true"
+                android:fontFamily="Roboto"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textColor="#639d4c"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_instruksipembayaran"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center"
+                android:layout_width="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="SELESAI" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

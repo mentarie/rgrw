@@ -126,6 +126,8 @@
                     android:textSize="10sp" />
 
                 <ImageView
+                    android:id="@+id/donasisaya_kamis"
+                    android:clickable="true"
                     android:layout_width="30dp"
                     android:layout_height="33dp"
                     android:gravity="left"
@@ -249,6 +251,8 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/catatankebaikan_1"
+            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

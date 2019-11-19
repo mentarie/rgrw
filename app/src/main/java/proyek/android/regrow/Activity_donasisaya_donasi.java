@@ -6,29 +6,31 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
-public class Activity_komunitas_lihatprofil extends AppCompatActivity {
+public class Activity_donasisaya_donasi extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_komunitas_lihatprofil);
+        setContentView(R.layout.activity_donasisaya_donasi);
 
-        ImageView img_galeri1 = findViewById(R.id.img_galeri1);
-        img_galeri1.setOnClickListener(new View.OnClickListener() {
+        LinearLayout bukti_pelaksanaan = findViewById(R.id.bukti_pelaksanaan);
+        bukti_pelaksanaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Activity_komunitas_lihatprofil.this, Activity_komunitas_lihatprofil_foto.class);
+                Intent i = new Intent(Activity_donasisaya_donasi.this, Activity_buktipelaksanaan.class);
                 startActivity(i);
             }
         });
         //back
-        ImageView back_profil_komunitas = findViewById(R.id.back_profil_komunitas);
-        back_profil_komunitas.setOnClickListener(new View.OnClickListener() {
+        ImageView back_donasisaya = findViewById(R.id.back_donasisaya);
+        back_donasisaya.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
             }
         });
+
     }
 }

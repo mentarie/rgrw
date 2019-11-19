@@ -19,12 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/full_photo" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Proses pemilihan dan pembelian bibit pohon"></TextView>
+            android:text="Proses pemilihan dan pembelian bibit pohon" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

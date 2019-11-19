@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Activity_instruksipembayaran">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,12 +89,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PENTING! Mohon transfer tepat sampai 3 angka terakhir agar isi saldo
-terverifikasi otomatis"
+    terverifikasi otomatis"
                     android:textSize="11sp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="6dp"
-
                     />
             </LinearLayout>
 
@@ -112,41 +114,41 @@ terverifikasi otomatis"
                 android:orientation="vertical">
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <TextView
-                    android:layout_width="250dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jumlah Isi Saldo"
-                    android:fontFamily="Roboto"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#7b7b7b"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 150.000"
-                    android:fontFamily="Roboto"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#7b7b7b"
-                    />
-            </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="#c4c4c4"
-                android:layout_marginLeft="9dp"
-                android:layout_marginRight="12dp"
-                >
-            </View>
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Isi Saldo"
+                        android:fontFamily="Roboto"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#7b7b7b"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 150.000"
+                        android:fontFamily="Roboto"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#7b7b7b"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c4c4c4"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="12dp"
+                    >
+                </View>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -175,7 +177,7 @@ terverifikasi otomatis"
                         android:textColor="#7b7b7b"
                         />
                 </LinearLayout>
-        </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
         <TextView
@@ -272,7 +274,7 @@ terverifikasi otomatis"
                 android:layout_marginLeft="23dp"
                 android:fontFamily="Roboto"
                 android:text="Transfer sebelum 12 Oct 2019 19:43 WIB atau isi saldo kamu
-otomatis dibatalkan oleh sistem."
+    otomatis dibatalkan oleh sistem."
                 android:textColor="#555555"
                 android:textSize="13sp" />
         </LinearLayout>
@@ -283,15 +285,50 @@ otomatis dibatalkan oleh sistem."
             android:layout_marginTop="12dp"
             >
         </View>
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Batalkan Isi Saldo"
-            android:fontFamily="Roboto"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:layout_marginTop="15dp"
-            android:textAlignment="center"
-            android:textColor="#639d4c"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batal_isisaldo"
+                android:text="Batalkan Isi Saldo"
+                android:clickable="true"
+                android:fontFamily="Roboto"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textColor="#639d4c"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_instruksipembayaran"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#639D4C"
+                android:layout_gravity="center"
+                android:layout_width="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="SELESAI" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+    </LinearLayout>

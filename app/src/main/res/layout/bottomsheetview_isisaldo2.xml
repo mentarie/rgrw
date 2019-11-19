@@ -236,8 +236,10 @@
             android:layout_gravity="center"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"/>
-        <androidx.cardview.widget.CardView
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_isisaldo"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             app:cardCornerRadius="8dp"
@@ -246,7 +248,6 @@
             android:layout_marginTop="20dp">
 
             <TextView
-                android:id="@+id/button_isisaldo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="#ffffff"

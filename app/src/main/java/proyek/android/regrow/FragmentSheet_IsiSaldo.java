@@ -85,6 +85,16 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
                 startActivityForResult(i, 69);
             }
         });
+
+        CardView button_isisaldo = view.findViewById(R.id.button_isisaldo);
+        button_isisaldo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentSheet_IsiSaldo.this.dismiss();
+                Intent i = new Intent(getContext(), Activity_isisaldo.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void handleUserExit() {
@@ -96,7 +106,7 @@ public class FragmentSheet_IsiSaldo extends BottomSheetDialogFragment {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 69 && resultCode == RESULT_OK){
            hasilCallbacks.callbacks();
-           this.dismiss();
+            this.dismiss();
         }
     }
 }

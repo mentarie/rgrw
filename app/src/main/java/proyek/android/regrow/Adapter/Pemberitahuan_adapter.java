@@ -1,10 +1,12 @@
 package proyek.android.regrow.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import proyek.android.regrow.Activity_komunitas_lihatprofil;
+import proyek.android.regrow.Activity_komunitas_lihatprofil_foto;
 import proyek.android.regrow.Model.Pemberitahuan_model;
 import proyek.android.regrow.R;
 
@@ -24,6 +28,7 @@ public class Pemberitahuan_adapter extends RecyclerView.Adapter<Pemberitahuan_ad
     }
 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        context = parent.getContext();
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_pemberitahuan, parent, false);
         return new Pemberitahuan_adapter.ViewHolder(view);
     }
@@ -31,9 +36,17 @@ public class Pemberitahuan_adapter extends RecyclerView.Adapter<Pemberitahuan_ad
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pemberitahuan_model model = pemberitahuan.get(position);
+        holder.id=model.getId();
         holder.item_pemberitahuan_img.setImageResource(model.getGambar());
         holder.item_pemberitahuan_desc.setText(model.getDeskripsi());
         holder.item_pemberitahuan_imgdesc.setImageResource(model.getDeskripsi_gambar());
+        holder.item_pemberitahuan_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, Activity_komunitas_lihatprofil_foto.class);
+                context.startActivity(i);
+            }
+        });
     }
 
     public int getItemCount() {
@@ -41,14 +54,24 @@ public class Pemberitahuan_adapter extends RecyclerView.Adapter<Pemberitahuan_ad
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
+        int id;
         ImageView item_pemberitahuan_img, item_pemberitahuan_imgdesc;
         TextView item_pemberitahuan_desc;
+        LinearLayout item_pemberitahuan_layout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             item_pemberitahuan_img = itemView.findViewById(R.id.item_pemberitahuan_img);
             item_pemberitahuan_desc = itemView.findViewById(R.id.item_pemberitahuan_desc);
             item_pemberitahuan_imgdesc = itemView.findViewById(R.id.item_pemberitahuan_imgdesc);
+            item_pemberitahuan_layout = itemView.findViewById(R.id.item_pemberitahuan_layout);
+        }
+
+        public void onClick(View view) {
+            if (id==9){
+                Intent i = new Intent(itemView.getContext(), Activity_komunitas_lihatprofil_foto.class);
+                itemView.getContext().startActivity(i);
+            }
         }
     }
 }

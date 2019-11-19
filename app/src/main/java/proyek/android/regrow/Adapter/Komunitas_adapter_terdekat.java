@@ -12,23 +12,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 import proyek.android.regrow.Activity_komunitas_lihatprofil;
 import proyek.android.regrow.Model.Komunitas_model;
 import proyek.android.regrow.R;
 
-public class Komunitas_adapter extends RecyclerView.Adapter<Komunitas_adapter.ViewHolder>{
+public class Komunitas_adapter_terdekat extends RecyclerView.Adapter<Komunitas_adapter_terdekat.ViewHolder>{
     private ArrayList<Komunitas_model> komunitas; //kalo list pake <>
     private Context context;
 
 
 
-    public Komunitas_adapter(ArrayList<Komunitas_model> komunitas) {
+    public Komunitas_adapter_terdekat(ArrayList<Komunitas_model> komunitas) {
         this.komunitas = komunitas;
     }
-
 
     @NonNull
     @Override

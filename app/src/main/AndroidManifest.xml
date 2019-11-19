@@ -6,12 +6,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/logoregrow"
+        android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_MetodePembayaran"></activity>
+        <activity android:name=".Activity_donasisaya_donasi"></activity>
+        <activity android:name=".Activity_instruksipembayaran" />
+        <activity android:name=".Activity_MetodePembayaran" />
         <activity android:name=".Activity_pemberitahuan" />
         <activity android:name=".Activity_listkampanye" />
         <activity android:name=".Activity_account" />
@@ -27,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Model.Activity_donasisaya_donasi" />
         <activity android:name=".Activity_donasisaya" />
         <activity android:name=".Activity_kodekonfirmasi" />
         <activity android:name=".Activity_daftar" />

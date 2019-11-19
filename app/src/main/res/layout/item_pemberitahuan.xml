@@ -6,6 +6,7 @@
     android:layout_marginTop="5dp"
     android:layout_marginRight="23dp"
     android:gravity="center_horizontal"
+    android:id="@+id/item_pemberitahuan_layout"
     android:orientation="horizontal">
 
     <ImageView

@@ -10,9 +10,9 @@
     <include layout="@layout/toolbar_account" />
 
     <LinearLayout
-        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="675dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
         tools:context=".Activity_account">
 
@@ -79,7 +79,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:orientation="horizontal">
@@ -93,7 +93,7 @@
             </ImageView>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="17sp"
@@ -112,10 +112,11 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
                     android:text="Rp 50.000"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="textEnd"
                     android:textColor="#555555"
                     android:textSize="16sp"
                     android:textStyle="bold">
@@ -123,25 +124,22 @@
                 </TextView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="74dp"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="12dp"
-                    android:layout_marginRight="0dp"
                     android:outlineAmbientShadowColor="#639D4C"
                     app:cardBackgroundColor="#ffffff"
                     app:cardCornerRadius="4dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="left">
+                        android:layout_height="match_parent">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
                             android:text="Isi Saldo"
                             android:textAlignment="center"
                             android:textColor="#639D4C"
@@ -174,8 +172,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
             android:orientation="vertical">
 
             <TextView
@@ -184,12 +182,16 @@
                 android:text="Riwayat Donasi"
                 android:textColor="#555555"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="2">
+
                 <LinearLayout
+                    android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -199,7 +201,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:text="Hingga Tanggal"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -207,10 +209,12 @@
                         android:layout_marginTop="8dp"
                         android:text="19 November 2019"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:orientation="vertical">
@@ -218,22 +222,20 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="100dp"
+                        android:textAlignment="textEnd"
                         android:text="Total Donasi :"
                         android:textColor="#555555"
-                        android:textSize="16sp">
-                    </TextView>
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="115dp"
+                        android:textAlignment="textEnd"
                         android:layout_marginTop="8dp"
                         android:text="Rp 200.000"
                         android:textColor="#555555"
                         android:textSize="16sp"
-                        android:textStyle="bold">
-                    </TextView>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -258,8 +260,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -270,7 +272,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_settings_green_24dp"/>
+                    android:src="@drawable/ic_settings_green_24dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -279,16 +282,18 @@
                     android:textColor="#555555"
                     android:textSize="16sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_info_green_24dp"/>
+                    android:src="@drawable/ic_info_green_24dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -297,16 +302,18 @@
                     android:textColor="#555555"
                     android:textSize="16sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_assessment_green_24dp"/>
+                    android:src="@drawable/ic_assessment_green_24dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -336,19 +343,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            >
+            android:layout_marginRight="20dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_exit_to_app_green_24dp"/>
+                    android:src="@drawable/ic_exit_to_app_green_24dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
